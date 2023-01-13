@@ -1,0 +1,51 @@
+version: "3.3"
+
+services:
+  cd-db:
+    container_name: postgresql_db
+    restart: always
+    image: sameersbn/postgresql:10-2
+    command:
+      - "-p 5432"
+    environment:
+      - PG_TRUST_LOCALNET=true
+      - DB_NAME=cd
+      - DB_USER=postgres
+      - DB_PASS=postgres
+      - PG_RUNDIR=/run/postgres
+      - PG_LOGDIR=/var/log/postgres
+    ports:
+      - "5432:5432"
+    volumes:
+      - data:/var/lib/postgresql
+      - logs:/var/log/postgresql
+
+  cd-be:
+    container_name: be_app
+    restart: always
+    image: cd-be
+    ports:
+      - "8080:8080"
+    volumes:
+      - data:/var/lib/postgresql
+      - logs:/var/log/postgresql
+    depends_on:
+       - cd-db
+
+  cd-ui:
+    container_name: fe_app
+    restart: always
+    image: cd-ui
+    ports:
+      - "4200:4200"
+    volumes:
+      - data:/var/lib/postgresql
+      - logs:/var/log/postgresql
+    depends_on:
+      - cd-be
+
+
+volumes:
+  data:
+  logs:
+  pgdata:

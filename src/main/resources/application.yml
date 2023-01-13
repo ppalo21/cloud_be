@@ -1,0 +1,11 @@
+spring:
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+  datasource:
+    platform: postgres
+    url: jdbc:postgresql://cd-db:5432/cd
+    username: postgres
+    password: postgres
+    driverClassName: org.postgresql.Driver
