@@ -1,4 +1,4 @@
-package sk.umb.skuska.mmojzis.cddb.controller.dto;
+package sk.umb.skuska.controller.dto;
 
 import lombok.Builder;
 import lombok.Data;

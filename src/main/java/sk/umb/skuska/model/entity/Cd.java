@@ -1,4 +1,4 @@
-package sk.umb.skuska.mmojzis.cddb.model.entity;
+package sk.umb.skuska.model.entity;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;

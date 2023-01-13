@@ -1,4 +1,4 @@
-package sk.umb.skuska.mmojzis.cddb;
+package sk.umb.skuska;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

@@ -1,14 +1,14 @@
-package sk.umb.skuska.mmojzis.cddb.controller;
+package sk.umb.skuska.controller;
 
 import org.springframework.web.bind.annotation.*;
-import sk.umb.skuska.mmojzis.cddb.controller.dto.CdDto;
-import sk.umb.skuska.mmojzis.cddb.controller.dto.CdRequestDto;
-import sk.umb.skuska.mmojzis.cddb.controller.dto.GenreDto;
-import sk.umb.skuska.mmojzis.cddb.controller.dto.GenreRequestDto;
-import sk.umb.skuska.mmojzis.cddb.model.entity.Cd;
-import sk.umb.skuska.mmojzis.cddb.model.entity.Genre;
-import sk.umb.skuska.mmojzis.cddb.service.CdService;
-import sk.umb.skuska.mmojzis.cddb.service.GenreService;
+import sk.umb.skuska.controller.dto.CdDto;
+import sk.umb.skuska.controller.dto.CdRequestDto;
+import sk.umb.skuska.controller.dto.GenreDto;
+import sk.umb.skuska.controller.dto.GenreRequestDto;
+import sk.umb.skuska.model.entity.Cd;
+import sk.umb.skuska.model.entity.Genre;
+import sk.umb.skuska.service.CdService;
+import sk.umb.skuska.service.GenreService;
 
 import java.util.ArrayList;
 import java.util.List;

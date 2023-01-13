@@ -1,8 +1,8 @@
-package sk.umb.skuska.mmojzis.cddb.service;
+package sk.umb.skuska.service;
 
 import org.springframework.stereotype.Service;
-import sk.umb.skuska.mmojzis.cddb.model.GenreRepository;
-import sk.umb.skuska.mmojzis.cddb.model.entity.Genre;
+import sk.umb.skuska.model.GenreRepository;
+import sk.umb.skuska.model.entity.Genre;
 
 import java.util.List;
 

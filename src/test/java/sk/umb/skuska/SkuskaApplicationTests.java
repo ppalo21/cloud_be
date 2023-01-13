@@ -1,4 +1,4 @@
-package sk.umb.skuska.mmojzis.cddb;
+package sk.umb.skuska;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
